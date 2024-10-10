@@ -1,0 +1,14 @@
+<div class="search-container">
+  <input type="text" [(ngModel)]="searchTerm" placeholder="Procurar contatos" (input)="onSearch()" />
+</div>
+<ul>
+  <li *ngFor="let contact of contacts$ | async">
+    <div>
+      {{ contact.name }} - {{ contact.email }}
+    </div>
+    <div class="contact-actions">
+      <button class="edit" (click)="onEdit(contact)">Editar</button>
+      <button class="delete" (click)="onDelete(contact.id)">Excluir</button>
+    </div>
+  </li>
+</ul>

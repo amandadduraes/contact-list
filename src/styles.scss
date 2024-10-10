@@ -1,1 +1,68 @@
-/* You can add global styles to this file, and also import other style files */
+// Paleta de cores do tema
+$primary-color: #4a90e2;
+$secondary-color: #357ab8;
+$background-color: #f9f9f9;
+$text-color: #333;
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: $background-color;
+  color: $text-color;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  color: $primary-color;
+  font-size: 2em;
+  margin-top: 20px;
+}
+
+.container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+
+
+/* Feedback para mensagens de sucesso e erro */
+.feedback {
+  margin-top: 15px;
+  padding: 10px;
+  border-radius: 4px;
+  text-align: center;
+  font-weight: bold;
+
+  &.success {
+    background-color: #d4edda;
+    color: #155724;
+  }
+
+  &.error {
+    background-color: #f8d7da;
+    color: #721c24;
+  }
+}
+
+/* Estilos de validação para campos inválidos */
+input.ng-invalid.ng-touched {
+  border-color: #dc3545;
+  background-color: #f8d7da;
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(220, 53, 69, 0.5);
+  }
+}
+
+/* Placeholder para mensagens de erro */
+.error-message {
+  font-size: 0.9em;
+  color: #dc3545;
+  margin-top: -10px;
+}

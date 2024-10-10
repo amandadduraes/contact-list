@@ -1,0 +1,16 @@
+<form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+  <label for="name">Nome:</label>
+  <input id="name" formControlName="name" required>
+  <div class="error-message" *ngIf="contactForm.get('name')?.invalid && contactForm.get('name')?.touched">
+    Campo obrigatório.
+  </div>
+
+  <label for="email">E-mail:</label>
+  <input id="email" formControlName="email" required>
+  <div class="error-message" *ngIf="contactForm.get('email')?.invalid && contactForm.get('email')?.touched">
+    E-mail inválido.
+  </div>
+
+  <button type="submit">{{ isEditing ? 'Salvar' : 'Adicionar' }}</button>
+  <button type="button" *ngIf="isEditing" (click)="cancelEdit()">Cancel</button>
+</form>
