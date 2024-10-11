@@ -9,11 +9,11 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The appli
 
 ## Funcionalidades
 
-1 - Adicionar Contatos: O formulário permite que o usuário adicione novos contatos com nome e e-mail.
-2 - Editar Contatos: É possível editar informações de um contato já existente.
-3 - Excluir Contatos: Cada contato possui um botão de exclusão que permite removê-lo da lista.
-4 - Pesquisar Contatos: O campo de busca permite filtrar contatos pelo nome ou e-mail.
-5 - Persistência de Dados: O app utiliza localStorage para salvar e carregar os contatos, garantindo que os dados permaneçam mesmo após o fechamento da aplicação.
+1. **Adicionar Contatos**: O formulário permite que o usuário adicione novos contatos com nome e e-mail.
+2. **Editar Contatos**: É possível editar informações de um contato já existente.
+3. **Excluir Contatos**: Cada contato possui um botão de exclusão que permite removê-lo da lista.
+4. **Pesquisar Contatos**: O campo de busca permite filtrar contatos pelo nome ou e-mail.
+5. **Persistência de Dados**: O app utiliza `localStorage` para salvar e carregar os contatos, garantindo que os dados permaneçam mesmo após o fechamento da aplicação.
 
 ## Estrutura dos Componentes
 
